@@ -23,7 +23,7 @@ namespace CalcLibrary.Tests
         [TestCase(0, 0, 0)]
         public void TestAddition(int a, int b, int expected)
         {
-            double result = calc.Add(a, b);  // Replace 'Add' with actual method name if needed
+            double result = calc.Add(a, b); 
             Assert.That(result, Is.EqualTo(expected));
         }
         [TestCase(5, 3, 2)]
@@ -58,7 +58,7 @@ namespace CalcLibrary.Tests
             }
             catch (ArgumentException ex)
             {
-                Assert.That(ex.Message, Is.EqualTo("Second Parameter Can't be Zero"));  // ✅ match the actual string
+                Assert.That(ex.Message, Is.EqualTo("Second Parameter Can't be Zero")); 
             }
         }
 
