@@ -1,0 +1,10 @@
+--lab-3
+// No C# code needed to change here.
+WE SHOULD RUN these commands in the terminal.
+
+dotnet tool install --global dotnet-ef
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+
+
+// The changes will reflect in SQL Server after you run the above commands.
