@@ -3,7 +3,7 @@ import ListofPlayers from './Components/ListofPlayers';
 import IndianPlayers from './Components/IndianPlayers';
 
 function App() {
-  const flag = false; // change to false to show IndianPlayers
+  const flag = false; // false to show IndianPlayers
 
   return (
     <div className="App">
