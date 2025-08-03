@@ -5,16 +5,11 @@ const IndianPlayers = () => {
     'Rohit', 'Virat', 'Gill', 'Rahul', 'Hardik', 'Jadeja',
     'Pant', 'Bumrah', 'Shami', 'Surya', 'Kuldeep'
   ];
-
-  // Destructuring into even and odd players
   const oddPlayers = teamPlayers.filter((_, index) => index % 2 === 1);
   const evenPlayers = teamPlayers.filter((_, index) => index % 2 === 0);
-
-  // Merging arrays
   const T20players = ['Rohit', 'Gill', 'Surya'];
   const RanjiTrophy = ['Rahul', 'Bumrah', 'Shami'];
   const mergedPlayers = [...T20players, ...RanjiTrophy];
-
   return (
     <div>
       <h2>Even Team Players</h2>
@@ -30,3 +25,4 @@ const IndianPlayers = () => {
 };
 
 export default IndianPlayers;
+
