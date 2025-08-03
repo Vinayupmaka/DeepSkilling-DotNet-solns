@@ -15,12 +15,10 @@ const ListofPlayers = () => {
     { name: 'Kuldeep', score: 60 }
   ];
 
-  // Using map to show all players
   const playerList = players.map((player, index) => (
     <li key={index}>{player.name} - {player.score}</li>
   ));
 
-  // Using arrow function to filter
   const below70 = players.filter(player => player.score < 70);
 
   return (
@@ -39,3 +37,4 @@ const ListofPlayers = () => {
 };
 
 export default ListofPlayers;
+
