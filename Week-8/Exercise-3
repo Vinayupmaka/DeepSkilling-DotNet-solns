@@ -1,0 +1,17 @@
+git branch GitNewBranch
+git branch -a
+git checkout GitNewBranch
+echo "Hello from GitNewBranch" > branchfile.txt
+git add branchfile.txt
+git commit -m "Added branchfile.txt in GitNewBranch"
+git status
+
+~~~~MERGING~~~
+
+git checkout master
+git diff GitNewBranch
+git difftool GitNewBranch
+git merge GitNewBranch
+git log --oneline --graph --decorate
+git branch -d GitNewBranch
+git status
