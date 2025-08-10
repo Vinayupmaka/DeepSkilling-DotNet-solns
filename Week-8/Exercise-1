@@ -1,0 +1,29 @@
+--Step-1--
+git --version
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+git config --list
+
+++Step-2++
+alias np='notepad++'
+git config --global core.editor "notepad++ -multiInst -notabbar -nosession -noPlugin"
+git config --global -e
+
+++Step 3++
+mkdir GitDemo
+cd GitDemo
+git init
+ls -a
+
+echo "Welcome to Git Hands-on Lab" > welcome.txt
+cat welcome.txt
+
+# Check status and stage file
+git status
+git add welcome.txt
+git commit -m "Added welcome.txt"
+
+# Push to remote 
+git remote add origin https://github.com/username/GitDemo.git
+git pull origin master
+git push origin master
