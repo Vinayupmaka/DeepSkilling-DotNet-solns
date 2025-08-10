@@ -1,0 +1,16 @@
+cd path/to/your/repo
+
+echo "Some debug logs..." > debug.log
+mkdir logs
+echo "Error stack trace..." > logs/error.log
+
+notepad++ .gitignore
+*.log
+logs/
+
+git status
+
+git add .gitignore
+git commit -m "Added .gitignore to keep repo clean"
+
+git push origin master
