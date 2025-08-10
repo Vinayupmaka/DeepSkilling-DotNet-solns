@@ -1,0 +1,15 @@
+STEP-1
+git checkout master
+git status
+
+STEP-2
+git branch -a
+
+STEP-3
+git pull origin master
+
+STEP-4
+git push origin master
+
+STEP-5 
+Go to your repo page and check commits/files.
